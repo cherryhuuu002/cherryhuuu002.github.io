@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="胡骏睿 Cherry">
+  <!-- 网点签名：从细到粗的对角渐变。跟随系统深浅 —— SVG 内可以写 media query，
+       站内的手动开关管不到浏览器标签图标，跟系统走是唯一稳的做法。 -->
+  <style>
+    .bg { fill: #F7F6F2 }
+    .dot { fill: #1A1917 }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #161514 }
+      .dot { fill: #F2EFE9 }
+    }
+  </style>
+  <rect class="bg" width="32" height="32"/>
+  <g class="dot">
+    <circle cx="5"  cy="5"  r="0.8"/>
+    <circle cx="12" cy="5"  r="1.2"/>
+    <circle cx="19" cy="5"  r="1.6"/>
+    <circle cx="26" cy="5"  r="2"/>
+    <circle cx="5"  cy="12" r="1.2"/>
+    <circle cx="12" cy="12" r="1.6"/>
+    <circle cx="19" cy="12" r="2"/>
+    <circle cx="26" cy="12" r="2.4"/>
+    <circle cx="5"  cy="19" r="1.6"/>
+    <circle cx="12" cy="19" r="2"/>
+    <circle cx="19" cy="19" r="2.4"/>
+    <circle cx="26" cy="19" r="2.8"/>
+    <circle cx="5"  cy="26" r="2"/>
+    <circle cx="12" cy="26" r="2.4"/>
+    <circle cx="19" cy="26" r="2.8"/>
+    <circle cx="26" cy="26" r="3.2"/>
+  </g>
+</svg>

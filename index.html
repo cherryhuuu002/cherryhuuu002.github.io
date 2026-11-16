@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- §3.5 全站 noindex：本站靠主动发链接触达，不靠搜索 -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="baiduspider" content="noindex, nofollow" />
+
+    <!-- §2.6 网点签名做站体识别，纯墨色不引入第六色 -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <title>胡骏睿 Cherry —— AI 设计师（品牌方向）</title>
+    <meta
+      name="description"
+      content="从品牌定位与视觉系统，到数字产品、线下落地与多语言内容；并以 AI-native 的方式，把品牌规范延伸到前端实现、内容与视频生产。"
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+
+    <!-- 动效门控必须在首帧前定：初始隐藏态只在 html.anim-ok 下生效。
+         IO 不存在或用户要求减少动效时不加这个类，整站静态直出 —— 内容永远不赌 JS。
+         （2026-08-19 夜间模式撤掉，这里不再写 data-theme：全站单一日间主题。） -->
+    <script>
+      (function () {
+        try {
+          if (
+            "IntersectionObserver" in window &&
+            !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ) {
+            document.documentElement.classList.add("anim-ok");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- 微信内置浏览器：分享卡片用 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="胡骏睿 Cherry —— AI 设计师（品牌方向）" />
+    <meta
+      property="og:description"
+      content="把品牌从定位做到真实落地，也把 AI 变成真正参与工作的方式。"
+    />
+    <script type="module" crossorigin src="/assets/index-BT-X-xy8.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B2Gtwjxt.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
